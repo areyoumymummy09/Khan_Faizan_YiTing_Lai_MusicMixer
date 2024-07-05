@@ -3,7 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <link href="css/grid.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <title>Just Dance Music Mixer</title>
   </head>
-  <body></body>
+
+  <h1 class="hidden">Welcome to Just Dance Music Mixer</h1>
+  <!-- Main Nav -->
+  <div id="sticley-nav-con">
+    <header class="grid-con" id="main-header">
+      <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-11">
+        <h2 class="hidden">Main Navigation</h2>
+
+        <div id="burger-con">
+          <ul>
+            <li><a href="index.html">Logo</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Tracks</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Main Hero-->
+  <body>
+    <section id="Hero-image" class="col-span-full">
+      <img src="images/036312164bcbaf82f026c4ac11d76905.jpg" />
+      <button id="playButton">Play</button>
+      <button id="pauseButton">Pause</button>
+      <button id="NextButton">Next</button>
+      <button id="ResetButton">Reset</button>
+    </section>
+
+    <!--These are the draggable music pieces -->
+    <section id="move-image">
+      <div class="music-pieces" alt="top one">
+        <div class="box 1">Move 1</div>
+        <div class="box 2">Move 2</div>
+        <div class="box 3">Move 3</div>
+        <div class="box 4">Move 4</div>
+      </div>
+
+      <!--These are the drop zones -->
+      <div class="drop-move">
+        <div class="drop-zone 1">Drop-zone 1</div>
+        <div class="drop-zone 2">Drop-zone 2</div>
+        <div class="drop-zone 3">Drop-zone 3</div>
+        <div class="drop-zone 4">Drop-zone 4</div>
+      </div>
+    </section>
+
+    <footer>
+      <p>crafted by Faizan and Elaine</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>
