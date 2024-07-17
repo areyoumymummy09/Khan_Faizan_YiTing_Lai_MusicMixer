@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+#sticley-nav-con {
+  background-color: #d10dd1;
+  padding: 10px;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#main-nav ul li {
+  margin: 0 15px;
+}
+
+#main-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#button button {
+  background-color: #d10dd1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#hero-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+#move-image {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px 75px 100px;
+  gap: 20px;
+}
+
+.drop-move {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 20px;
+  padding: 25px 50px 75px 100px;
+}
+
+.music-pieces {
+  padding-top: 100px;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border: 2px solid #d10dd1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d10dd1;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+/*.drop-zone {
+  width: 120px;
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #d10dd1;
+  border-radius: 15px;
+  overflow: hidden;
+}
+*/
+
+.box-top {
+  background-color: black;
+  height: 100px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.box-bottom {
+  background-color: #d10dd1;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+footer {
+  text-align: center;
+  background-color: #d10dd1;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
