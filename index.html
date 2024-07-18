@@ -29,24 +29,42 @@
     </div>
 
     <!-- Main Buttons -->
-    <div id="button">
+    <div id="button" class="col-span-full">
       <button id="playButton">Play</button>
       <button id="pauseButton">Pause</button>
       <button id="NextButton">Next</button>
       <button id="ResetButton">Reset</button>
+      <input id="volumeControl" type="range" min="0" max="100" step="1" />
     </div>
 
     <!-- Draggable music pieces and hero image -->
     <section id="move-hero-container">
-      <div id="move-image" class="move-it">
+      <div id="move-image" class="move-it col-span-full">
+        <audio id="move" controls></audio>
         <div class="music-pieces" alt="top one">
-          <div class="box"><img src="images/stone.png" alt="Move 1" /></div>
-          <div class="box"><img src="images/stone.png" alt="Move 2" /></div>
-          <div class="box"><img src="images/stone.png" alt="Move 3" /></div>
-          <div class="box"><img src="images/stone.png" alt="Move 4" /></div>
+          <div class="box">
+            <audio id="after-party" src="audio /after-party.mp3"></audio>
+            <img src="images/stone-1.png" alt="Move 1" />
+          </div>
+
+          <div class="box">
+            <audio id="Brit-clean" src="audio /brit-clean.mp3"></audio>
+            <img src="images/stone-2.png" alt="Move 2" />
+          </div>
+
+          <div class="box">
+            <audio id="drop-top-echo" src="audio /drop-top-echo.mp3"></audio>
+            <img src="images/stone-3.png" alt="Move 3" />
+          </div>
+
+          <div class="box">
+            <audio id="vocal" src="audio /vocal-super-fry.mp3"></audio>
+            <img src="images/stone-4.png" alt="Move 4" />
+          </div>
         </div>
       </div>
-      <div id="hero-image">
+      <div id="hero-image-container">
+        <div id="hero-image" class="col-span-full col-end-3"></div>
         <img src="images/Middle_Dance_left.png" />
         <img src="images/Middle_Dance_right.png" />
       </div>
@@ -55,20 +73,23 @@
     <!-- Drop zones -->
     <div class="drop-move">
       <div class="drop-zone">
-        <img src="images/temp_drop.jpg" alt="Drop-zone 1" />
+        <div class="inner-box"></div>
       </div>
+
       <div class="drop-zone">
-        <img src="images/temp_drop.jpg" alt="Drop-zone 2" />
+        <div class="inner-box"></div>
       </div>
+
       <div class="drop-zone">
-        <img src="images/temp_drop.jpg" alt="Drop-zone 3" />
+        <div class="inner-box"></div>
       </div>
+
       <div class="drop-zone">
-        <img src="images/temp_drop.jpg" alt="Drop-zone 4" />
+        <div class="inner-box"></div>
       </div>
     </div>
 
-    <footer class="sticley-nav-con">
+    <footer>
       <p>Crafted by Faizan and Elaine</p>
     </footer>
     <script src="js/main.js"></script>
