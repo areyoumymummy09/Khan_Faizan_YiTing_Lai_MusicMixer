@@ -1,8 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-
-  background-image: url(../images/temp_bckgrd.png);
+  background-image: url("../images/temp_bckgrd.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
@@ -14,7 +13,7 @@ body {
 
 #sticley-nav-con {
   background-color: #d10dd1;
-  padding: 10px;
+  padding: 7px;
 }
 
 #main-nav ul {
@@ -49,6 +48,18 @@ body {
   border-radius: 5px;
 }
 
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#hero-image {
+  display: flex;
+  gap: 20px;
+}
+
 #move-hero-container {
   display: flex;
   justify-content: center;
@@ -68,12 +79,6 @@ body {
   gap: 10px;
 }
 
-#hero-image {
-  padding-left: 30px;
-  display: flex;
-  gap: 20px;
-}
-
 #hero-image img {
   max-width: 40%;
   max-height: 30%;
@@ -84,21 +89,27 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 10px;
-  margin-right: 20px;
   padding: 25px 50px 75px 50px;
 }
 
 .drop-move .drop-zone {
-  width: 100px;
-  height: 200px;
+  width: 130px;
+  height: 170px;
+  background-color: #c549d7;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: black;
-  border-radius: 20px;
-  overflow: hidden;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center; /* Center items horizontally */
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.drop-move .drop-zone .inner-box {
+  width: 80%;
+  height: 60%;
+  background-color: #000;
+  border-radius: 5px;
+  margin-top: 10px; /* Add some margin at the top if needed */
 }
 
 .drop-move .drop-zone img {
@@ -124,8 +135,6 @@ footer {
   text-align: center;
   background-color: #d10dd1;
   color: white;
-  padding: 10px 0;
-  position: fixed;
   width: 100%;
   bottom: 0;
 }
