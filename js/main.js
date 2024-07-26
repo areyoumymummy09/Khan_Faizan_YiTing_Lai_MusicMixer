@@ -5,10 +5,9 @@ const musicPieces = document.querySelectorAll(".music-pieces img"),
   resetButton = document.querySelector("#ResetButton");
 
 const move = document.querySelectorAll(".move-hero-container"),
-  theAudio = document.querySelector("#move-image"),
+  theAudio = document.querySelector("#move-image #move"),
   playButton = document.querySelector("#playButton"),
   pauseButton = document.querySelector("#pauseButton"),
-  rewindButton = document.querySelector("#rewindButton"),
   volSlider = document.querySelector("#volumeControl");
 
 let draggedPiece;
@@ -44,6 +43,11 @@ function handleDrop() {
     console.log("Dropped");
     innerBox.appendChild(draggedPiece); // Place the dragged piece in the drop zone
   }
+
+  console.log(draggedPiece);
+  // loadAudio();
+  console.log(`audio#${draggedPiece.dataset.audio}`);
+  document.querySelector(`audio#${draggedPiece.dataset.audio}`).play();
 }
 
 function resetpic() {
@@ -100,8 +104,8 @@ musicPieceDiv.addEventListener("drop", handleDrop);
 resetButton.addEventListener("click", resetpic);
 
 // Audio Event listener
-move.forEach((move) => move.addEventListener("click", loadAudio));
+// move.forEach((move) => move.addEventListener("click", loadAudio));
 playButton.addEventListener("click", playAudio);
 pauseButton.addEventListener("click", pauseAudio);
-rewindButton.addEventListener("click", restartAudio);
+resetButton.addEventListener("click", restartAudio);
 volSlider.addEventListener("change", setVolume);
